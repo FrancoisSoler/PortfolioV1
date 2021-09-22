@@ -1,7 +1,7 @@
 import './scss/main.scss';
 //Animate On Scroll
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import './aos/dist/aos.css';
 
 import * as THREE from 'three';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
