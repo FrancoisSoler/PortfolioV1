@@ -1,4 +1,8 @@
 import './scss/main.scss';
+//Animate On Scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -178,3 +182,13 @@ function animate() {
 }
 
 animate();
+
+
+// AOS
+
+AOS.init({
+	easing: 'ease-in-sine',
+	delay: 100,
+	once:true,
+	anchorPlacement: 'top-center'
+  });
