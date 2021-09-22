@@ -1,4 +1,4 @@
-import './style.css';
+import './scss/main.scss';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -110,12 +110,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('static/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('jeff.png');
+const jeffTexture = new THREE.TextureLoader().load('static/jeff.png');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(2,2,2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -123,8 +123,8 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('static/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('static/normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -136,7 +136,7 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 40;
+moon.position.z = 46;
 moon.position.setX(-10);
 
 jeff.position.z = -5;

@@ -15,7 +15,7 @@
   <main>
 
     <header>
-      <div class="cards">
+      <div class="card">
         <h1>François Soler</h1>
         <p>🚀 Développpeur Front-end 🚀</p>
       </div>
@@ -33,26 +33,31 @@
       <div class="whoami">
 
 
-        <h2>A propos 🧔‍♂️</h2>
-        <p>
-          Bonjour et bienvenue 👋 <br>
-          Je suis un développeur Front-end Junior passionné par JavaScript et ses possibilitées infini. J'aime
-          particulièrement ThreeJS, qui permet de faire le lien entre le monde de la 3D et Internet.ThreeJS offre une
-          nouvelle dimension pour le design et parfois même dans l'expérience utilisateur. D'autant que chaque jours
-          nous avons accès à une meilleure connexion Internet , via des appareils toujours plus puissants. Cela permet
-          une intégration de ThreeJS encore un peu plus immersive.
-        </p>
+        <h2 class="whoami__title" >A propos 🧔‍♂️</h2>
+        <div class="whoami__text">
+          <span>Bonjour et bienvenue 👋 <br></span>
 
-        <p>
-          Mais ThreeJS n'est pas ma seul obsession. J'adore aussi GSAP, une librairie Js qui ouvre la voie pour des
-          animations visuel plus simple à coder mais qui n'oublie pas d'être un outils très puissant.
-        </p>
+          <p>
+            
+            Je suis un développeur Front-end Junior passionné par JavaScript et ses possibilitées infini. J'aime
+            particulièrement ThreeJS, qui permet de faire le lien entre le monde de la 3D et Internet.ThreeJS offre une
+            nouvelle dimension pour le design et parfois même dans l'expérience utilisateur. D'autant que chaque jours
+            nous avons accès à une meilleure connexion Internet , via des appareils toujours plus puissants. Cela permet
+            une intégration de ThreeJS encore un peu plus immersive.
+          </p>
 
-        <p>
-          Cepandant, bien que ces outils soit très cool, ils ne sont pas nécessaire dans tous les projets. Je me suis
-          donc tourné vers React pour la gestion front et WordPress pour le back via Frontity. Cela me permet d'avoir
-          une intérface client perofmante tout en ayant un back Headless performant et rapide à mettre en place, avec un
-          backoffice toujours présent. </p>
+          <p>
+            Mais ThreeJS n'est pas ma seul obsession. J'adore aussi GSAP, une librairie Js qui ouvre la voie pour des
+            animations visuel plus simple à coder mais qui n'oublie pas d'être un outils très puissant.
+          </p>
+
+          <p>
+            Cepandant, bien que ces outils soit très cool, ils ne sont pas nécessaire dans tous les projets. Je me suis
+            donc tourné vers React pour la gestion front et WordPress pour le back via Frontity. Cela me permet d'avoir
+            une intérface client perofmante tout en ayant un back Headless performant et rapide à mettre en place, avec
+            un
+            backoffice toujours présent. </p>
+        </div>
       </div>
     </section>
 
@@ -64,13 +69,14 @@
         la perfection.
       </p>
  -->
-      <h2>Mon travail 👨‍💻</h2>
+      <h2 class="light__title">Mon travail 👨‍💻</h2>
 
-      <ul>Exemple de sites sur lesquels j'ai travaillé
-        <li>
+      <ul class="light__list" >Exemple de sites sur lesquels j'ai travaillé
+
+        <li class="light__list__element" >
           <h3>VBL Advisory</h3>
-          <div> Conseil d'entreprise </div>
-          <div>Thème Custom fait à partir de maquettes clients
+          <span> Conseil d'entreprise </span>
+          <p> - Thème Custom fait à partir de maquettes clients
             <br>
             - Méthode AGILE, conçu pour être rapide. <br>
             - Front réalisé avec Sass, ABEM et divers bibliothèque JS comme Animate On Scroll, Swiper, Isotope..
@@ -79,15 +85,18 @@
             - Chaques pages du sites est prévue pour être modifiées via Gutemberg
             - Plugin personalisé qui permet une gestion efficace des évenement en cours et à venir, Mise en place server
             Mail, Hébergement sur server Cloud OVH, Connexion sécurisée HTTPS TLS 1.3 .
-          </div>
+          </p>
           <br>
-          <a href="https://vbladvisory.com/">👉  VBL Advisory  👈</a>
+          <div class="light__list__element__link" >
+
+            <a href="https://vbladvisory.com/">👉 VBL Advisory 👈</a>
+          </div>
         </li>
 
-        <li>
+        <li class="light__list__element">
           <h3>Nouvelle Horizon</h3>
-          <div>Boutique de fitness personalisé</div>
-          <div>Thème Custom fait à partir de maquettes clients
+          <span>Boutique de fitness personalisé</span>
+          <p>- Thème Custom fait à partir de maquettes clients
             <br>
             - Méthode AGILE <br>
             - Home page faite avec ThreeJS et GSAP.
@@ -98,9 +107,13 @@
             <br>
             - Mise en place server Mail, Hébergement sur server Cloud Gandi, Connexion sécurisée HTTPS TLS 1.3 .
 
-          </div>
+          </p>
           <br>
-          <a href="https://nouvellehorizon.fr/">👉   Nouvelle Horizon  👈</a>
+          <div class="light__list__element__link second" >
+
+          <a href="https://nouvellehorizon.fr/">👉 Nouvelle Horizon 👈</a>
+            </div>
+
         </li>
       </ul>
 
@@ -143,8 +156,8 @@
     </section>
 
 
-    <div class="blockquote-wrapper thanks">
-      <blockquote class="blockquote">
+    <div class="blockquote-wrapper ">
+      <blockquote class="blockquote thanks">
         <h1>
           Merci de votre visite !
         </h1>
