@@ -4,7 +4,7 @@ import * as THREE from 'three';
 //Animate On Scroll
 import * as AOS from 'aos';
 
- 
+
 
 // Setup
 
@@ -27,7 +27,7 @@ renderer.render(scene, camera);
 
 const geometry = new THREE.TorusGeometry(10, 3, 32, 100);
 const material = new THREE.PointsMaterial({
-    size: 0.05
+  size: 0.05
 });
 const torus = new THREE.Points(geometry, material);
 
@@ -107,7 +107,7 @@ function addStar() {
   starsT1.position.set(x, y, z);
   starsT2.position.set(x, y, z);
   scene.add(starsT1);
-   scene.add(starsT2); 
+  scene.add(starsT2);
 }
 
 Array(200).fill().forEach(addStar);
@@ -121,7 +121,7 @@ scene.background = spaceTexture;
 
 const jeffTexture = new THREE.TextureLoader().load('./images/jeff.png');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(2,2,2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const jeff = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
 
@@ -170,7 +170,7 @@ moveCamera();
 function animate() {
   requestAnimationFrame(animate);
 
- torus.rotation.x += 0.002; 
+  torus.rotation.x += 0.002;
   torus.rotation.y += 0.001;
   torus.rotation.z += 0.01;
 
@@ -186,17 +186,9 @@ animate();
 
 // AOS
 
-<<<<<<< HEAD
- AOS.init({
-=======
 AOS.init({
->>>>>>> c6f8a69a1af6ee59fb4dbf64dc889ae6f6d41a85
-	easing: 'ease-in-sine',
-	delay: 100,
-	once:true,
-	anchorPlacement: 'top-center'
-  });
-<<<<<<< HEAD
- 
-=======
->>>>>>> c6f8a69a1af6ee59fb4dbf64dc889ae6f6d41a85
+  easing: 'ease-in-sine',
+  delay: 50,
+  once: true,
+  anchorPlacement: 'top-center'
+});
