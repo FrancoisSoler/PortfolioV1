@@ -186,10 +186,17 @@ animate();
 
 // AOS
 
+<<<<<<< HEAD
  AOS.init({
+=======
+AOS.init({
+>>>>>>> c6f8a69a1af6ee59fb4dbf64dc889ae6f6d41a85
 	easing: 'ease-in-sine',
 	delay: 100,
 	once:true,
 	anchorPlacement: 'top-center'
   });
+<<<<<<< HEAD
  
+=======
+>>>>>>> c6f8a69a1af6ee59fb4dbf64dc889ae6f6d41a85
