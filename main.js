@@ -1,5 +1,5 @@
 import './scss/main.scss';
-import * as THREE from 'three/build/three.module.js';
+import * as THREE from './node_modules/three/build/three.module.js';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 //Animate On Scroll
 import * as AOS from 'aos';
