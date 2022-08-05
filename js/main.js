@@ -6,7 +6,7 @@ import * as AOS from 'aos';
 
 
 
-// Setup
+// blzabled
 
 const scene = new THREE.Scene();
 
